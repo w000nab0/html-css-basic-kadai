@@ -65,11 +65,13 @@
 }
 
 #bottom-child02 {
+  position: relative;
   left: 200px;
-  top: 100px;
+ 
 }
 
 #bottom-child03 {
+  position: relative;
   left: 400px;
-  top: 200px;
+ 
 }
