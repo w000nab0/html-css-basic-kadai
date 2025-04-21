@@ -1,0 +1,117 @@
+/* デフォルトの余白をリセット */
+h1, p, body {
+    margin: 0;
+}
+
+/* フォントサイズの設定 */
+p, a {
+    font-size: 20px;
+}
+
+
+@media screen and (max-width: 768px) {
+      p, a {
+      font-size: 25px;
+      }
+  }
+
+
+
+/* ヘッダーのスタイル設定 */
+header {
+    margin-bottom: 20px;
+    background-color: rgb(244, 79, 79);
+    text-align: center;
+}
+
+/* h1要素の文字色設定 */
+h1 {
+    color: rgb(255, 255, 255);
+}
+
+/* main要素のスタイル設定 */
+main {
+    padding: 10px;
+}
+
+/* Flexコンテナの設定 */
+#parent {
+    display: flex;
+    justify-content: space-around;
+}
+
+@media screen and (max-width: 768px) {
+      #parent {
+         display: flex;
+         flex-direction: column;
+        justify-content: space-around;
+      }
+  }
+
+
+
+
+
+
+
+/* 天気予報ボックスのスタイル設定 */
+.contents {
+    border: 3px solid rgb(238, 204, 204);
+    flex-basis: 25%;
+    padding: 10px 15px;
+    margin: 20px 0;
+    text-align: center;
+}
+
+/* h2要素のスタイル設定 */
+h2 {
+    font-size: 25px;
+    border-bottom: 3px dotted rgb(236, 122, 122);
+}
+
+@media screen and (max-width: 768px) {
+      h2 {
+      font-size: 30px;
+      }
+  }
+
+
+
+/* h2要素の前の●記号 */
+h2::before {
+    content: "●";
+    color: rgb(239, 111, 139);
+}
+
+/* 2番目のp要素の最初の文字のスタイル */
+.contents p:nth-of-type(2)::first-letter {
+    font-weight: bold;
+    color: rgb(97, 206, 249);
+}
+
+/* 画像のスタイル設定 */
+.contents img {
+    margin: 10px 0;
+    width: 70%;
+}
+
+/* フッターのスタイル設定 */
+footer {
+    background-color: rgb(244, 79, 79);
+    text-align: center;
+}
+
+/* フッター内のリンクスタイル */
+footer a {
+    color: rgb(255, 255, 255);
+}
+
+/* 訪問済みリンクのスタイル */
+footer a:visited {
+    color: rgb(193, 234, 251);
+}
+
+/* ホバー時のリンクスタイル */
+footer a:hover {
+    color: rgb(245, 178, 168);
+}
